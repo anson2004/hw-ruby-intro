@@ -43,7 +43,7 @@ end
 
 def binary_multiple_of_4? s
   # YOUR CODE HERE
-  s.length > 0 && s.match(/^[0|1]*$/) ?  s.to_i(2)%4 ==0 : false
+  s.length > 0 && (true if Float(string) rescue false) ?  s.to_i(2)%4 ==0 : false
 end
 
 # Part 3
