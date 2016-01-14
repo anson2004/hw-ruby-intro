@@ -4,11 +4,13 @@
 
 def sum arr
   # YOUR CODE HERE
+  return 0 if arr.empty?
   return arr.reduce(:+)
 end
 
 def max_2_sum arr
   # YOUR CODE HERE
+  return 0 if arr.empty?
   arr = arr.sort.last(2)
   return arr.reduce(:+)
 end
@@ -17,6 +19,7 @@ end
 def sum_to_n? arr, n
   # YOUR CODE HERE
   return true if arr.empty? and n == 0
+  return false if arr.empty?
   arr.combination(2).each do |combi|
     return true if combi.inject(:+) == n
   end
